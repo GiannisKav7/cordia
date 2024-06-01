@@ -19,9 +19,6 @@ function App() {
       <NavBar />
       <InfoSection />
       <Features />
-      <OurTeam />
-      <MissionVisionValues />
-      <News />
       <Supporters />
       <ContactForm />
       <Footer />
