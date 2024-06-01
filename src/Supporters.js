@@ -4,7 +4,7 @@ import "./styles.css";
 function Supporters() {
   return (
     <section id="supporters" className="container my-5">
-      <h2 className="text-center">Υποστηρικτές</h2>
+      <h2 className="text-center">Οι Υποστηρικτές μας</h2>
       <div className="row">
         <div className="col-md-3 text-center">
           <img src="supporter1-logo.jpg" alt="Supporter 1" className="img-fluid mb-3" />

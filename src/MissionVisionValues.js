@@ -4,7 +4,7 @@ import "./styles.css";
 function MissionVisionValues() {
   return (
     <section id="mission-vision-values" className="container my-5">
-      <h2 className="text-center">Όραμα</h2>
+      <h2 className="text-center">Το Όραμά μας</h2>
       <div className="row">
         <div className="col-md-4">
           <h4>Mission</h4>

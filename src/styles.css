@@ -1,7 +1,18 @@
-#navbar{
-  font-size: medium;
-  background-color: #ffffff;
+/* Increase specificity by targeting HTML structure more precisely */
+.navbar.custom-navbar,
+.navbar.custom-navbar.navbar-light {
+  background-color: white !important;  /* Ensure this overrides other styles */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+.navbar.custom-navbar .navbar-nav .nav-link {
+  color: #333;
+}
+
+.navbar.custom-navbar .navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
 
 #info-section {
   display: flex;
@@ -60,7 +71,12 @@ h1 {
 h2 {
   font-weight: bold;
   text-align: center;
-  color: #0375ba;
+  color: #0375ba !important;
+}
+h4 {
+  font-weight: bold;
+  text-align: center;
+  color: #0375ba !important;
 }
 
 #form {

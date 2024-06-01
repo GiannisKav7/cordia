@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import logo from './cordia.png';
+import logo from './images/cordia.png';
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function NavBar() {
   return (
-    <Navbar id="navbar" bg="light" expand="md">
+    <Navbar id="navbar" bg="light" expand="md" className='custom-navbar'>
       <Container>
         <Navbar.Brand href="#">
           <img src={logo} alt="Cordia" height="30" />

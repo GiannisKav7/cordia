@@ -4,7 +4,9 @@ import "./styles.css"; // Make sure to include your styling here
 function Features() {
   return (
     <div id="features" className="container">
-      <h1 className="text-center">Δυνατότητες</h1>
+      <br></br>
+      <h2 className="text-center">Δυνατότητες</h2>
+      <br></br>
       <div className="row">
         <div className="col-md-6">
           <img
