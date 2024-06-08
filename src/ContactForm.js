@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./styles.css";
-import { db } from './firebase-config'; // Ensure you import your Firebase config
+import { db } from './firebase-config'; // Ensure you have configured Firebase
+import { collection, addDoc } from 'firebase/firestore';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -20,7 +21,12 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await db.collection('contacts').add(formData);
+      await addDoc(collection(db, "contacts"), {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        timestamp: new Date()
+      });
       alert('Το μήνυμά σας έχει σταλεί!');
       setFormData({ name: '', email: '', message: '' }); // Reset form
     } catch (error) {

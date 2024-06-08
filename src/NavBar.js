@@ -15,9 +15,6 @@ function NavBar() {
           <Nav className="ms-auto">
             <Nav.Link href="#home">ΑΡΧΙΚΗ</Nav.Link>
             <Nav.Link href="#features">ΔΥΝΑΤΟΤΗΤΕΣ</Nav.Link>
-            <Nav.Link href="#our-team">ΟΜΑΔΑ</Nav.Link>
-            <Nav.Link href="#mission-vision-values">ΟΡΑΜΑ</Nav.Link>
-            <Nav.Link href="#news">ΝΕΑ</Nav.Link>
             <Nav.Link href="#supporters">ΥΠΟΣΤΗΡΙΚΤΕΣ</Nav.Link>
             <Nav.Link href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</Nav.Link>
           </Nav>
